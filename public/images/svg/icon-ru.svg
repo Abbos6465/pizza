@@ -1,0 +1,25 @@
+<svg width="1000" height="500" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="1000" height="500" fill="#F5F5F5"/>
+<path d="M-4126 -458C-4126 -459.105 -4125.1 -460 -4124 -460H2193C2194.1 -460 2195 -459.105 2195 -458V1122C2195 1123.1 2194.1 1124 2193 1124H-4124C-4125.1 1124 -4126 1123.1 -4126 1122V-458Z" fill="#D8DBF2"/>
+<g filter="url(#filter0_d_0_1)">
+<rect x="-15" y="-15" width="132" height="132" rx="8" fill="white" shape-rendering="crispEdges"/>
+<rect width="20" height="20" rx="4" fill="url(#pattern0)"/>
+</g>
+<path d="M-4124 -459H2193V-461H-4124V-459ZM2194 -458V1122H2196V-458H2194ZM2193 1123H-4124V1125H2193V1123ZM-4125 1122V-458H-4127V1122H-4125ZM-4124 1123C-4124.55 1123 -4125 1122.55 -4125 1122H-4127C-4127 1123.66 -4125.66 1125 -4124 1125V1123ZM2194 1122C2194 1122.55 2193.55 1123 2193 1123V1125C2194.66 1125 2196 1123.66 2196 1122H2194ZM2193 -459C2193.55 -459 2194 -458.552 2194 -458H2196C2196 -459.657 2194.66 -461 2193 -461V-459ZM-4124 -461C-4125.66 -461 -4127 -459.657 -4127 -458H-4125C-4125 -458.552 -4124.55 -459 -4124 -459V-461Z" fill="black" fill-opacity="0.1"/>
+<defs>
+<filter id="filter0_d_0_1" x="-25" y="-22" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="3"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.254902 0 0 0 0 0.290196 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_0_1" transform="translate(-0.248503) scale(0.00598802)"/>
+</pattern>
+<image id="image0_0_1" width="250" height="167" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAACnBAMAAADK0lwnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX///+qveEAOaaOMEvVKx7/j+iDAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+YEEw03Lv/sMiYAAABeSURBVHja7c0BCQAgEASwq2AFK1jB/plM8RzIVmAJAAAAAAAAfG01ZTfZ7Xa73W632+12u91ut9vtdrvdbrfb7eP7acptstvtdrvdbrfb7Xa73W632+12u91ut9unPdMX1Q14hi66AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTA0LTE5VDEzOjU1OjQ2KzAwOjAwwVi2cwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wNC0xOVQxMzo1NTo0NiswMDowMLAFDs8AAAAASUVORK5CYII="/>
+</defs>
+</svg>

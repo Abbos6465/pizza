@@ -1,0 +1,451 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &__content {
+
+            &-title {
+                color: #181818;
+                font-size: 1.5rem;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.24px;
+                text-transform: uppercase;
+            }
+
+            &-text {
+                color: #7B7B7B;
+                font-size: 1rem;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 0.93rem;
+
+        &__lang {
+            position: relative;
+
+            &-btn {
+                position: relative;
+                z-index: 10;
+                cursor: pointer;
+                border-radius: 3px;
+                background: none;
+                outline: none;
+                border: none;
+
+                &__img {
+                    width: 20px;
+                    height: 20px;
+                    box-shadow: 0 5px 10px rgba(30, 32, 37, 0.12);
+                    border-radius: 3px;
+                }
+            }
+
+            &-dropdown {
+                display: none;
+                position: absolute;
+                padding: 5px 0;
+                z-index: 10;
+                background-color: white;
+                box-shadow: 0 5px 10px rgba(30, 32, 37, 0.12);
+                border-radius: 3px;
+                left: -95px;
+                flex-direction: column;
+                transition: 0.3s linear;
+
+                &__btn {
+                    display: flex;
+                    gap: 8px;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    padding: 5px;
+                    align-items: center;
+                    transition: 0.2s linear;
+
+                    &:hover {
+                        background-color: rgba(128, 128, 128, 0.11);
+                    }
+
+                    &-img {
+                        border-radius: 3px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &-text {
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            .lang-dropdown {
+                display: flex;
+                overflow: hidden;
+                height: 70px;
+                animation-name: langDropdown;
+                animation-duration: 0.4s;
+
+                @keyframes langDropdown {
+                    to {
+                        height: 70px;
+                    }
+
+                    from {
+                        height: 0px;
+                    }
+                }
+            }
+        }
+
+        &__korzina-btn {
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 30px;
+            cursor: pointer;
+            background: #FE5F1E;
+            border: 1px solid #FE5F1E;
+            display: flex;
+            align-items: center;
+            gap: 0.81rem;
+            transition: 0.4s linear;
+
+            &__item {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                &:nth-child(n+2) {
+                    padding-left: 0.81rem;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: 2.81rem;
+                        width: 1px;
+                        height: 25px;
+                        background: rgba(255, 255, 255, 0.25);
+
+                        .nav-right__korzina-btn:hover & {
+                            background-color: #FE5F1E;
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                color: #FFF;
+                font-size: 1rem;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+                .nav-right__korzina-btn:hover & {
+                    color: #FE5F1E;
+                }
+            }
+
+            &:hover {
+                background-color: #FFF;
+
+                .korzina-icon path {
+                    stroke: #FE5F1E !important;
+                }
+            }
+        }
+    }
+}
+
+// ==> Resposive <== //
+
+@media only screen and (max-width:1200px) {
+
+    .nav {
+
+        &-left__content {
+
+            &-title {
+                font-size: 1.4rem;
+            }
+
+            &-text {
+                font-size: 0.9rem;
+            }
+        }
+
+        &-right {
+
+            &__lang {
+
+                &-btn__img {
+                    width: 18px;
+                    height: 18px;
+                }
+
+                &-dropdown {
+                    padding: 4px 0;
+                    left: -85px;
+
+                    &__btn {
+                        gap: 7px;
+                        padding: 4px;
+
+                        &-img {
+                            width: 18px;
+                            height: 18px;
+                        }
+
+                        &-text {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                .lang-dropdown {
+                    height: 60px;
+
+                    @keyframes langDropdown {
+                        to {
+                            height: 60px;
+                        }
+
+                        from {
+                            height: 0px;
+                        }
+                    }
+                }
+            }
+
+            &__korzina-btn__text {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .nav {
+
+        &-left__content {
+
+            &-title {
+                font-size: 1.3rem;
+            }
+
+            &-text {
+                font-size: 0.8rem;
+            }
+        }
+
+        &-right {
+
+            &__lang {
+
+                &-btn__img {
+                    width: 16px;
+                    height: 16px;
+                }
+
+                &-dropdown {
+                    padding: 3px 0;
+                    left: -75px;
+
+                    &__btn {
+                        gap: 6px;
+                        padding: 3px;
+
+                        &-img {
+                            width: 16px;
+                            height: 16px;
+                        }
+
+                        &-text {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+
+                .lang-dropdown {
+                    height: 50px;
+
+                    @keyframes langDropdown {
+                        to {
+                            height: 50px;
+                        }
+
+                        from {
+                            height: 0px;
+                        }
+                    }
+                }
+            }
+
+            &__korzina-btn__text {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .nav {
+
+        &-left__content {
+
+            &-title {
+                font-size: 1.2rem;
+            }
+
+            &-text {
+                font-size: 0.7rem;
+            }
+        }
+
+        &-right {
+
+            &__lang {
+
+                &-btn__img {
+                    width: 14px;
+                    height: 14px;
+                }
+
+                &-dropdown {
+                    padding: 2px 0;
+                    left: -65px;
+
+                    &__btn {
+                        gap: 5px;
+                        padding: 2px;
+
+                        &-img {
+                            width: 14px;
+                            height: 14px;
+                        }
+
+                        &-text {
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+
+                .lang-dropdown {
+                    height: 40px;
+
+                    @keyframes langDropdown {
+                        to {
+                            height: 40px;
+                        }
+
+                        from {
+                            height: 0px;
+                        }
+                    }
+                }
+            }
+
+            &__korzina-btn__text {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .nav {
+        gap: 5px;
+
+        &-left__content {
+            &-title {
+                font-size: 1.1rem;
+            }
+
+            &-text {
+                font-size: 0.6rem;
+            }
+        }
+
+        &-right {
+
+            &__lang {
+
+                &-btn__img {
+                    width: 12px;
+                    height: 12px;
+                }
+
+                &-dropdown {
+                    left: -55px;
+
+                    &__btn {
+                        gap: 4px;
+
+                        &-img {
+                            width: 12px;
+                            height: 12px;
+                        }
+
+                        &-text {
+                            font-size: 0.5rem;
+                        }
+                    }
+                }
+
+                .lang-dropdown {
+                    height: 37px;
+
+                    @keyframes langDropdown {
+                        to {
+                            height: 37px;
+                        }
+
+                        from {
+                            height: 0px;
+                        }
+                    }
+                }
+            }
+
+            &__korzina-btn {
+                padding: 0.65rem 0.9rem;
+                border-radius: 50px;
+
+                &__item {
+                    display: none;
+                }
+
+                .korzina {
+                    display: flex;
+                    padding: 0;
+                }
+
+                &__text {
+                    display: none;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}

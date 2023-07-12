@@ -1,0 +1,404 @@
+.main__page-header-section {
+    padding: 30px 0;
+}
+
+.main__page-header {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+    &-filters {
+        width: 70%;
+
+        &__btn {
+            border-radius: 30px;
+            padding: 14px 20px;
+            text-align: center;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100% !important;
+            width: fit-content;
+            cursor: pointer;
+            background: #F9F9F9;
+
+            &-text {
+                text-align: center;
+                font-family: "Montserrat";
+                text-transform: capitalize;
+                font-size: 1rem;
+                font-style: normal;
+                white-space: nowrap;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.24px;
+            }
+
+            &-active {
+                background: #282828;
+
+                & span {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+
+    &-sorts {
+        position: relative;
+
+        &__btn {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background: none;
+            border: none;
+            justify-content: space-between;
+            gap: 7px;
+        }
+
+        &__dropdown-icon {
+            transform: rotate(180deg);
+            transition: 0.4s linear;
+        }
+
+        &__title {
+            color: #2C2C2C;
+            font-family: "Motserrat";
+            font-size: 0.875rem;
+            font-style: normal;
+            text-transform: capitalize;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.21px;
+        }
+
+        &__active-item {
+            color: #FE5F1E;
+            font-family: "Montserrat";
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.21px;
+        }
+
+        &-dropdown {
+            position: absolute;
+            right: 0;
+            top: 25px;
+            border-radius: 3px;
+            display: none;
+            flex-direction: column;
+            padding: 13px 0;
+            background-color: white;
+            box-shadow: 0 5px 10px rgba(30, 32, 37, 0.12);
+
+
+
+            &__btn {
+                padding: 10px 14px;
+                cursor: pointer;
+                display: flex;
+                justify-content: start;
+                border: none;
+                background: none;
+                transition: 0.4s linear;
+
+                &-text {
+                    font-family: "Poppins";
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.21px;
+                }
+
+                &-active {
+                    background: rgba(254, 95, 30, 0.1);
+
+                    & span {
+                        color: #FE5F1E;
+                    }
+                }
+
+                &:hover {
+                    background: rgba(254, 95, 30, 0.1);
+
+                    & span {
+                        color: #FE5F1E;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sorts_dropdown {
+    display: flex;
+    overflow: hidden;
+    height: 135px;
+    animation-name: sortDropdown;
+    animation-duration: 0.4s;
+
+    @keyframes sortDropdown {
+        to {
+            height: 135px;
+        }
+
+        from {
+            height: 0px;
+        }
+    }
+}
+
+.icon-rotate {
+    transform: rotate(0);
+}
+
+// ==> Responsive <== //
+
+@media only screen and (max-width:1200px) {
+    .main__page-header-section {
+        padding: 25px 0;
+    }
+
+    .main__page-header {
+
+        &-filters {
+
+            &__btn {
+                padding: 12px 18px;
+
+                &-text {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        &-sorts {
+
+            &__btn {
+                gap: 6px;
+            }
+
+            &__title {
+                font-size: 0.775rem;
+            }
+
+            &__active-item {
+                font-size: 0.775rem;
+            }
+
+            &-dropdown {
+                padding: 11px 0;
+
+                &__btn {
+                    padding: 8px 12px;
+
+                    &-text {
+                        font-size: 0.775rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sorts_dropdown {
+        height: 110px;
+    
+        @keyframes sortDropdown {
+            to {
+                height: 110px;
+            }
+    
+            from {
+                height: 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .main__page-header-section {
+        padding: 20px 0;
+    }
+
+    .main__page-header {
+
+        &-filters {
+
+            &__btn {
+                padding: 10px 16px;
+
+                &-text {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        &-sorts {
+
+            &__btn {
+                gap: 5px;
+            }
+
+            &__title {
+                font-size: 0.675rem;
+            }
+
+            &__active-item {
+                font-size: 0.675rem;
+            }
+
+            &-dropdown {
+                padding: 9px 0;
+
+                &__btn {
+                    padding: 6px 10px;
+
+                    &-text {
+                        font-size: 0.675rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sorts_dropdown {
+        height: 90px;
+    
+        @keyframes sortDropdown {
+            to {
+                height: 90px;
+            }
+    
+            from {
+                height: 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .main__page-header-section {
+        padding: 15px 0;
+    }
+
+    .main__page-header {
+        &-filters {
+
+            &__btn {
+                padding: 8px 14px;
+
+                &-text {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        &-sorts {
+
+            &__btn {
+                gap: 4px;
+            }
+
+            &__title {
+                font-size: 0.575rem;
+            }
+
+            &__active-item {
+                font-size: 0.575rem;
+            }
+
+            &-dropdown {
+                padding: 4px 0;
+
+                &__btn {
+                    padding: 4px 8px;
+
+                    &-text {
+                        font-size: 0.575rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sorts_dropdown {
+        height: 65px;
+    
+        @keyframes sortDropdown {
+            to {
+                height: 65px;
+            }
+    
+            from {
+                height: 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .main__page-header-section {
+        padding: 10px 0;
+    }
+
+    .main__page-header {
+        &-filters {
+            width: 40%;
+
+            &__btn {
+                padding: 6px 12px;
+
+                &-text {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+
+        &-sorts {
+
+            &__btn {
+                gap: 3px;
+            }
+
+            &__title {
+                font-size: 0.475rem;
+            }
+
+            &__active-item {
+                font-size: 0.475rem;
+            }
+
+            &-dropdown {
+                padding: 2px 0;
+
+                &__btn {
+                    padding: 2px 6px;
+
+                    &-text {
+                        font-size: 0.475rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sorts_dropdown {
+        height: 45px;
+    
+        @keyframes sortDropdown {
+            to {
+                height: 45px;
+            }
+    
+            from {
+                height: 0px;
+            }
+        }
+    }
+}
