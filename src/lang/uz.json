@@ -5,9 +5,18 @@
     "мясные" : "mol go'shti",
     "вегетарианская" : "vegetarian",
     "гриль" : "tovuq go'shti",
+    "острые" : "keskin",
+    "закрытые" : "yopiq",
     "сортировка по" : "saralash",
     "популярности" : "mashhurligi bo'yicha",
     "по цене" : "narx bo'yicha",
     "по алфавиту" : "alifbo tartibida",
-    "пиццы":"pitsa"
+    "пиццы" : "pitsa",
+    "чизбургер-пицца" : "chizburger-pitsa",
+    "сырная" : "pishloqli",
+    "креветки по-азиатски" : "osiyo qisqichbaqasi",
+    "сырный цыпленок" : "pishloqli tovuq",
+    "тонкое" : "yupqa",
+    "традиционное" : "an'anaviy",
+    "добавить" : "qo'shish"
 }

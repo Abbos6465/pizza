@@ -35,14 +35,14 @@ export default {
             </div>
             <div class="main-card__pizza-length__list">
                 <button class="main-card__pizza-length__list-item" v-for="pizzaLength in pizza.pizzaLengths" :key="`pizzaLength-${pizzaLength.id}`">
-                    {{ $t(pizzaLength.name) }}
+                    {{ pizzaLength.name }}
                 </button>
             </div>
         </div>
     </div>
     <div class="main-card_footer">
         <div class="main-card__pizza-price">
-            от {{ (pizza.price) }} ₽
+            {{ (pizza.price) }} ₽
         </div>
         <button class="main-card__pizza-korzina-add-btn">
             <svg xmlns="http://www.w3.org/2000/svg" class="main-card__pizza-korzina-add-btn__icon" width="12" height="12" viewBox="0 0 12 12" fill="none">

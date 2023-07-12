@@ -5,9 +5,18 @@
     "мясные" : "meat",
     "вегетарианская" : "vegetarian",
     "гриль" : "grill",
+    "острые" : "sharp",
+    "закрытые" : "closed",
     "сортировка по" : "sorting by",
     "популярности" : "popularity",
     "по цене" : "by price",
     "по алфавиту" : "alphabetically",
-    "пиццы" : "pizza"
+    "пиццы" : "pizza",
+    "чизбургер-пицца" : "cheeseburger-pizza",
+    "сырная" : "cheesy",
+    "креветки по-азиатски" : "asian shrimp",
+    "сырный цыпленок" : "cheese chicken",
+    "тонкое" : "thin",
+    "традиционное" : "traditional",
+    "добавить" : "add"
 }

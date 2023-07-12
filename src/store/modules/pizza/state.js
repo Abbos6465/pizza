@@ -147,7 +147,7 @@ export const state = {
 
         {
             id:4,
-            name:"Сырный цыпленок",
+            name:"сырный цыпленок",
             img:"/images/pizza/pizza-cheeseChicken.svg",
             breadSizes:[
                 {
