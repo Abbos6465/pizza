@@ -56,6 +56,7 @@ export default {
 
         $('body').addEventListener('click', (event) => {
             if(event.target.parentElement.className != 'main__page-header-sorts__btn'){
+                dropdownIcon.classList.remove('icon-rotate');
                 return dropdownList.classList.remove('sorts_dropdown');
             }
         });
